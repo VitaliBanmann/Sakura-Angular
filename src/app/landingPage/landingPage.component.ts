@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import { Navbar } from "./navbar/navbar";
+import { Navbar } from "./navbar/navbar.component";
 
 @Component({
   selector: "app-landingPage",
@@ -8,7 +8,7 @@ import { Navbar } from "./navbar/navbar";
   imports: [CommonModule, Navbar],
   template: `
   <section>
-    <app-navbar></app-navbar>
+    <div><app-navbar></app-navbar></div>
     <h1 class="fontRaleway">SAKURA RAMEN</h1>
     <h2 class="fontRaleway">BEST RAMEN IN TOWN</h2>
   </section>

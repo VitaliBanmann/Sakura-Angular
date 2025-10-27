@@ -5,8 +5,8 @@ import { CommonModule } from "@angular/common";
   selector: 'app-navbar',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './navbar.html',
-  styleUrl: './navbar.css',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss'],
 })
 export class Navbar {
 
