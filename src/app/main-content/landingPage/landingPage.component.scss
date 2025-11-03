@@ -23,5 +23,5 @@ section {
     background-position: 50% 50%;
     flex-direction: column;
     position: relative;
-    @include dFlex(center, center);
+    @include dFlex();
 }

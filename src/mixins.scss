@@ -1,4 +1,4 @@
-@mixin dFlex ($jc, $ai) {
+@mixin dFlex ($jc: center, $ai: center) {
     display: flex;
     justify-content: $jc;
     align-items: $ai;

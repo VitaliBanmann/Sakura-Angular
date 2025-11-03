@@ -6,7 +6,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    @include dFlex(center, center);
+    @include dFlex();
     flex-direction: column;
 
     >h1 {
@@ -43,7 +43,7 @@ section {
 }
 
 .menu {
-    @include dFlex(space-evenly, center);
+    @include dFlex($jc: space-evenly);
     width: 100%;
     flex-direction: row;
     gap: 48px;
