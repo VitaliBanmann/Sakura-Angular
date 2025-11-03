@@ -1,0 +1,35 @@
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #9F0908;
+    margin: 24px 0px 24px 0px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aboutHTO {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+.HTO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >img {
+        width: 128px;
+        height: 128px;
+        margin-top: 64px;
+        margin-bottom: 16px;
+    }
+}

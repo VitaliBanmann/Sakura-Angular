@@ -1,25 +1,27 @@
+@import './../../../mixins.scss';
+
 h1, h2 {
   color: whitesmoke;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 4rem;
+  margin: 240px 0px 48px 0px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 30%;
 }
 
 section {
     height: 100vh;
     width: 100%;
-    background-image: url('./../../../../../../Modul-3ramen/assets/img/1_hero/JPG/hero_bg.jpg') ;
+    background-image: url('/img/1_hero/JPG/hero_bg.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    position: relative;
+    @include dFlex(center, center);
 }

@@ -1,32 +1,67 @@
+@import './../../../../mixins.scss';
+
 nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    padding: 32px;
-    display: flex;
-    justify-content: space-between;
+    height: 100px;
+    z-index: 1000;
+    @include dFlex(space-between, center);
 
     >img {
         width: 64px;
         height: 64px;
+        flex-shrink: 0;
     }
+    
     >div {
-        width: 350px;
         display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-shrink: 0;
+
         >a {
+            cursor: pointer;
+            
             &:hover {
                 color: red;
             }
         }
     }
+}
 
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding-right: 8px;
+    white-space: nowrap;
+}
+
+.phone_btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    padding: 8px;
+    background-color: #9F0908;
+    border-radius: 16px;
+    border: 1px solid whitesmoke;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #B50A09;
+    }
+    
+    >img {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
     }
 
-    a {
-        text-decoration: none;
+    >span {
+        font-size: 1rem;
         color: whitesmoke;
-        padding-right: 8px;
     }
-
-    .phone_btn {
-        width: 64px;
-        height: 64px;
-    }
+}

@@ -1,0 +1,28 @@
+@import './../../../../src/mixins.scss';
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #9F0908;
+    margin: 24px 0px 24px 0px;
+}
+
+.map-marker {
+    @include dFlex(center, center);
+    gap: 10px;
+    margin-bottom: 16px;
+    >img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.googlemaps {
+    @include dFlex(center, center);
+    width: 100%;
+    margin-bottom: 16px;
+    >iframe {
+        width: 95%;
+        height: 300px;
+    }
+}

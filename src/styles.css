@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .fontRaleway {
@@ -12,6 +13,17 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: url('./../../../Modul-3ramen/assets/fonts/raleway/static/Raleway-Italic.ttf') format('truetype');
+    src: url('./../public/fonts/raleway/Raleway-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Economica';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./../public/fonts/economica/Economica-Regular.ttf');
+}
+
+.max-content-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}

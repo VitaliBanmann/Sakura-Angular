@@ -1,0 +1,86 @@
+@import './../../../mixins.scss';
+
+section {
+    width: 100%;
+    background-image: url('/img/3_section_our_menu/JPG/section_our_menu_bg.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    @include dFlex(center, center);
+    flex-direction: column;
+
+    >h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #9F0908;
+    margin: 24px 0px 24px 0px;
+    }
+}
+
+.menupics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 24px;
+
+    >div {
+
+    >img {
+        width: 256px;
+        height: 256px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    >h2 {
+        font-size: 1.5rem;
+        margin-top: 16px;
+        color: #333;
+    }
+}
+}
+
+.menu {
+    @include dFlex(space-evenly, center);
+    width: 100%;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.menu-table {
+    
+    >h3{
+        font-size: 1.2rem;
+    }
+    >table {
+        font-family: 'Economica';
+        color: #0A141E;
+        font-weight: 600;
+        table-layout: fixed;
+        width: 200px;
+
+        >tr {
+            height: 2rem;
+
+            >td {
+                font-family: 'Raleway';
+                color: #675E54;
+                
+                &:first-child {
+                    width: 60%;
+                }
+                
+                &:last-child {
+                    width: 40%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.firstorder {
+    order: -1;
+}

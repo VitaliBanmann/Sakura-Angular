@@ -1,0 +1,17 @@
+@import './../../../../mixins.scss';
+
+.footer{
+    @include dFlex(space-between, center);
+}
+
+.footer_right {
+    
+    a {
+        color: #333;
+        text-decoration: none;
+        
+        &:hover {
+            color: red;
+        }
+    }
+}
