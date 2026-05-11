@@ -1,59 +1,98 @@
-# Sakura
+# 🌸 Sakura - Angular App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+> Eine elegante Angular-Anwendung mit modernem Design und responsivem Layout.
 
-## Development server
+## 🎨 Features
 
-To start a local development server, run:
+- ✅ **Modernes Design** - Sakura-inspirierte Ästhetik
+- ✅ **Responsive Layout** - Mobile-First Approach
+- ✅ **Angular Best Practices** - Standalone Components
+- ✅ **Optimierte Performance** - Schnelle Ladezeiten
+- ✅ **Accessible UI** - WCAG-konform
+- ✅ **Dark/Light Mode** (optional) - Benutzer-Preferenz
 
-```bash
-ng serve
-```
+## 🔧 Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Framework:** Angular 17+
+- **Language:** TypeScript
+- **Styling:** SCSS/CSS3
+- **Build Tool:** Angular CLI
+- **Package Manager:** npm
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## 🚀 Quick Start
 
 ```bash
-ng build
+# Dependencies installieren
+npm install
+
+# Dev-Server starten
+npm start
+
+# Im Browser öffnen
+# http://localhost:4200
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📖 Entwicklung
 
 ```bash
-ng test
+# Development-Server mit Hot Reload
+npm start
+
+# Production Build
+npm run build
+
+# Tests ausführen
+npm test
+
+# Code-Analyse
+npm run lint
 ```
 
-## Running end-to-end tests
+## 📁 Projektstruktur
 
-For end-to-end (e2e) testing, run:
+```
+src/
+├── app/
+│   ├── components/       # UI-Komponenten
+│   ├── pages/           # Seiten/Routes
+│   ├── services/        # Business Logic
+│   └── shared/          # Gemeinsame Utilities
+├── assets/              # Bilder & Icons
+├── styles/             # Globale Styles
+└── environments/       # Environment-Konfigurationen
+```
+
+## 🎯 Konfiguration
+
+### Umgebungsvariablen
+
+Bearbeite `src/environments/environment.ts` für lokale Entwicklung:
+
+```typescript
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:3000'
+};
+```
+
+## 🚢 Deployment
 
 ```bash
-ng e2e
+# Production Build
+npm run build
+
+# Deploy mit Firebase Hosting
+firebase deploy
+
+# Oder mit Vercel
+vercel deploy
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📞 Support
 
-## Additional Resources
+- **Issues:** Fehlerberichte im GitHub Repository einreichen
+- **Fragen:** Diskussionen im GitHub Discussions Board
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+_Ein elegantes Angular-Projekt mit Sakura-Inspiration._
